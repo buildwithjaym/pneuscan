@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="/assets/img/Pnue.png" />
+  <title>Set new password | PneuScan AI</title>
+  <link rel="stylesheet" href="/assets/css/app.css" />
+</head>
+<body>
+  <main class="auth-wrap">
+    <a class="brand auth-brand" href="/index.html">
+      <img class="brand-mark" src="/assets/img/Pnue.png" alt="PneuScan AI icon" />
+      <span class="brand-text">PneuScan <span class="brand-ai">AI</span></span>
+    </a>
+
+    <section class="auth-card">
+      <h1>Set a new password</h1>
+      <p class="muted">Choose a strong password you will remember.</p>
+
+      <form id="resetForm" class="auth-form">
+        <label class="auth-label">
+          New password
+          <input id="password" type="password" autocomplete="new-password" minlength="8" required />
+        </label>
+
+        <button class="btn btn-primary" type="submit">Update password</button>
+
+        <p id="msg" class="auth-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="/assets/js/auth/reset.js"></script>
+</body>
+</html>
